@@ -38,6 +38,7 @@ Route::get('/hello', function() {
         ->header('foo', 'bar');
 });
 
+//Wildcard
 Route::get('/posts/{id}', function($id){
     // ddd($id);
     return response('Posts '. $id);
